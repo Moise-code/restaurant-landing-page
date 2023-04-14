@@ -120,7 +120,11 @@ function orderForm(){
 order.addEventListener('click',orderForm);
 // function to add the input address
 function addresses(){
-    address.classList.add('hide')
+    address.classList.toggle('hide');
+}
+function removeOrder(){
+    address.classList.add('hide');
 }
 
 delivery.addEventListener('click', addresses);
+takeout.addEventListener('click', removeOrder);

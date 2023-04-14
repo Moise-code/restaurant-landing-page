@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./app.js" defer></script>
 </head>
 <body class="">
     <section class="navigation">
@@ -44,11 +45,13 @@
         <input type="number"placeholder="Enter phone number" required id="inputs">
         <input type="email" placeholder="Enter email address" required id="inputs">
         <label for="ooptions">Choose delivery type</label>
-        <div>
+        <div class="delivery-option">
+            <div class="radios">
             <label for="Delivery">Delivery</label>
             <input type="radio" name="radios" class="delivery">
             <label for="TakeOut">TakeOut</label>
             <input type="radio" name="radios" class="takeout">
+            </div>
             <input type="text" placeholder="Enter Address" required class="address hide" id="inputs">
         </div>
         <h4>Payment Details</h4>
